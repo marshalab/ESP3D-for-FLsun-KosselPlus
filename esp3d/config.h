@@ -19,7 +19,7 @@
 */
 
 //version and sources location
-#define FW_VERSION "2.1.3b0"
+#define FW_VERSION "2.1.2"
 #define REPOSITORY "https://github.com/luc-github/ESP3D"
 
 //Customize ESP3D ////////////////////////////////////////////////////////////////////////
@@ -131,7 +131,7 @@
 #define OLED_DISPLAY_SSD1306  // OLED Display Type: SSD1306(OLED_DISPLAY_SSD1306) / SH1106(OLED_DISPLAY_SH1106), comment this line out to disable oled
 #define OLED_PIN_SDA  4  //5 //SDA;  // i2c SDA Pin
 #define OLED_PIN_SCL  15  //4 //SCL;  // i2c SCL Pin
-#define OLED_ADDR   0x3c
+#define OLED_ADDR   0x3C
 #define HELTEC_EMBEDDED_PIN 16 //0 to disable
 #define OLED_FLIP_VERTICALY 1 //0 to disable
 #endif
@@ -376,7 +376,7 @@ const byte DEFAULT_AP_IP_MODE =                 STATIC_IP_MODE;
 const byte DEFAULT_IP_VALUE[]   =           {192, 168, 0, 1};
 const byte DEFAULT_MASK_VALUE[]  =          {255, 255, 255, 0};
 #define DEFAULT_GATEWAY_VALUE               DEFAULT_IP_VALUE
-const long DEFAULT_BAUD_RATE =          115200;
+const long DEFAULT_BAUD_RATE =          250000; //115200;
 #define DEFAULT_PHY_MODE            WIFI_PHY_MODE_11G
 #define DEFAULT_SLEEP_MODE          WIFI_MODEM_SLEEP
 #define DEFAULT_CHANNEL             11
